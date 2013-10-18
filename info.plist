@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.romanroibu.alfredworkflows.parallels</string>
+	<key>connections</key>
+	<dict>
+		<key>7C7ADEF0-4CE9-481A-B809-29D73D48D959</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>00AFDAF6-A83D-431D-A961-FACE8C337B8C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Roman Roibu</string>
+	<key>description</key>
+	<string>Simplify the process of starting a VM in Parallels</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Parallels</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>||</string>
+				<key>runningsubtext</key>
+				<string>Gathering information…</string>
+				<key>script</key>
+				<string>/usr/bin/ruby parallels.rb {query}</string>
+				<key>title</key>
+				<string>Run a Parallels virtual machine</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7C7ADEF0-4CE9-481A-B809-29D73D48D959</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>open {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>00AFDAF6-A83D-431D-A961-FACE8C337B8C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Icon from: http://www.softicons.com/free-icons/application-icons/virtually-there-icons-by-barrymieny/parallels-desktop-icon</string>
+	<key>uidata</key>
+	<dict>
+		<key>00AFDAF6-A83D-431D-A961-FACE8C337B8C</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>7C7ADEF0-4CE9-481A-B809-29D73D48D959</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/TheRedGuy/alfred-parallels-workflow</string>
+</dict>
+</plist>
