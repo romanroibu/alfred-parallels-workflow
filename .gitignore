@@ -1,0 +1,5 @@
+# OS X
+.DS_Store
+
+# Ignore my VM icons
+user_icons/*.png
